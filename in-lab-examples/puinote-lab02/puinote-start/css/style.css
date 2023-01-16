@@ -1,0 +1,19 @@
+/* ---------- BODY ---------------------------------------------------------- */
+
+body {
+  /* Some browsers (like Chrome) include a small margin around the <body> by
+    default. Our application doesn't need this margin, so we remove it.
+  */
+  margin: 0px;
+  padding-top: 100px;
+
+  /* Set the default font family and font color for our application. */
+  font-family: 'Roboto';
+  color: #dddddd;
+
+  /* Set the background color (dark mode UI!) */
+  background-color: #191919;
+}
+
+/* ---------- NOTECARD ------------------------------------------------------ */
+
