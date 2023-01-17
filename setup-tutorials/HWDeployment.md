@@ -6,7 +6,7 @@ For the assignments in this class, you will upload all code to a single reposito
 
 ## Creating your assignment repository
 
-We recommend you start by "forking" the example repository that we've created for you, called `interactive-structures/teach-pui-example`. To do so, go to the [repository page](https://github.com/interactive-structures/teach-pui-example) and click the Fork button in the upper right. You should see a dialog like this:
+We recommend you start by "forking" the example repository that we've created for you, called `teach-PUI-2023S-example`. To do so, go to the [repository page](https://github.com/rikky0611/teach-PUI-2023S-example) and click the Fork button in the upper right. You should see a dialog like this:
 
 ![Screenshot of dialog giving options for forking the homework example repository.](./assets/github-fork.png)
 
@@ -20,17 +20,17 @@ Now that you've created a fork, you need to "clone" it to your local computer. T
 
 Select the repo and choose a path to save the files to on your local computer, if you don't want to use the default paths. Then click **Clone**.
 
+You can also use the command line to clone a repo with `git clone REPO-URL` where REPO-URL is from the repo website: 
+
+![Screenshot of dialog giving options for cloning the homework example repository in GitHub cli.](./assets/github-cli-clone.png)
+
 ## Configuring GitHub Pages
 
 The last thing we need to do to make sure we can see your completed assignments is to set up GitHub Pages. Remember how your browser needs a server to send it the contents of your webpage? Well, GitHub can act as the server for the code in your repo - but we need to enable that feature first.
 
-To do so, go to your repo's page on GitHub (you can click the **View on GitHub** button in GitHub Desktop, or find it from [github.com](https://github.com)). Now find the Settings tab on that page, and then in the sidebar click Pages. You should see a page like this:
-
+To do so, go to your repo's page on GitHub (you can click the **View on GitHub** button in GitHub Desktop, or find it from [github.com](https://github.com)). Now find the Settings tab on that page, and then in the sidebar click Pages. To make your website publicly available, all you need to do is change the **Branch** option from "None" to "main", then click Save. It should look like this:
 ![Screenshot of GitHub Pages configuration page.](./assets/github-pages-setup.png)
 
-To make your website publicly available, all you need to do is change the **Branch** option from "None" to "main", then click Save. It should look like this:
-
-![Screenshot of GitHub Pages configuration page with branch option set to main.](./assets/github-pages-branch.png)
 
 Now, to get the URL that your site will be available at, replace `<github-username>` with your GitHub handle and `<repo-name>` with the name of your repository:
 
