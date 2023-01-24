@@ -13,14 +13,14 @@ This week, we will create a more complex layout, that looks like this:
 ## Introduction
 
 In this lab exercise, we will:
+
 - Create a more complex layout for a single "notecard"
-- Use *flex containers* to arrange child elements horizontally
+- Use _flex containers_ to arrange child elements horizontally
 - Understand layouts as "boxes within boxes"
 
 ## Setup
 
-You can download a zip file with all starter code and assets here: https://tinyurl.com/pui-lab02
-
+You can download all starter code and assets here from git [bit.ly/PUI_lab02](https://bit.ly/PUI_lab02)
 
 ## Width, Height, Padding, Margins (Review)
 
@@ -37,17 +37,17 @@ You can download a zip file with all starter code and assets here: https://tinyu
 
 ```
 .notecard {
-    
+
     box-sizing: border-box;
 
     width: 450px;
     height: 150px;
-    
+
     margin-left: auto;
     margin-right: auto;
-    
+
     padding: 20px;
-    
+
     border-radius: 8px;
     background-color: #212121;
 
@@ -63,6 +63,7 @@ You should see an empty gray notecard in the browser.
 ![Notecard layout divided into left side and right side](./_readme_imgs/layout-left-right.png)
 
 5. In `index.html`, add two children to the notecard div. These two new elements will represent the left and right sections of the notecard. Add class names accordingly.
+
 ```
 <div class="notecard">
     <div class="notecard-left">
@@ -72,9 +73,10 @@ You should see an empty gray notecard in the browser.
         R
     </div>
 </div>
-``` 
+```
 
 6. In 'notecard.css`, add a different background color for each of the new notecard elements.
+
 ```
 .notecard-left {
     background-color: blue
@@ -89,6 +91,7 @@ Notice that by default, each of the elements expand to reach 100% of the parent 
 Your first instinct might be to adjust the width of each element. We can give this a shot:
 
 7. Set the width of `notecard-left` to 60% of its parent's width. Set the width of `notecard-right` to 40% of its parent's width.
+
 ```
 .notecard-left {
     width: 60%;
@@ -102,15 +105,15 @@ Your first instinct might be to adjust the width of each element. We can give th
 
 We've chosen proper widths, but the elements still appear on top of each other. As it turns out, regardless of their widths, block-level elements (such as `<div>`) will always stack on top of each other – each new `<div>` will be placed on a new line.
 
-
-To make these elements sit side-by-side, on the same line, we will first modify the *parent* element.
+To make these elements sit side-by-side, on the same line, we will first modify the _parent_ element.
 
 8. In the `notecard` class, add a new display rule as shown:
+
 ```
     display: flex;
 ```
 
-We have now converted `notecard` into a ***flex container***, and its two child elements, `notecard-left` and `notecard-right`, are now ***flex children***. Unlike standard block elements, which always appear on a new line, ***flex children*** try to get as close to each other as possible. Notice that `notecard-left` and `notecard-right` are now on the same line!
+We have now converted `notecard` into a **_flex container_**, and its two child elements, `notecard-left` and `notecard-right`, are now **_flex children_**. Unlike standard block elements, which always appear on a new line, **_flex children_** try to get as close to each other as possible. Notice that `notecard-left` and `notecard-right` are now on the same line!
 
 Also notice that by default, flex children stretch vertically until they reach the height of their parent element.
 
@@ -123,19 +126,22 @@ You should notice a couple changes – the sidebar width is now correct, but it 
 One way to solve this is by adding a left margin, as we did earlier in this excercise.
 
 10. Add an `auto` margin to the left side of `notecard-right`.
+
 ```
     margin-left: auto
 ```
+
 Just as before, the browser expands this margin as much as it can, pushing `notecard-right` to the right side of its parent element.
 
 Now, let's set the width of `notecard-left`. We'd like it to take up the remaining space in the notecard – it should be the full notecard width, minus the width of the 30 pixel sidebar. Let's look at a couple ways of doing this.
 
 11. Use the CSS `calc()` function to set the width of `notecard-left`:
+
 ```
     width: calc(100% - 30px);
 ```
 
-Since we're defining the width in terms of both a percentage *and* a pixel value, we have to use the CSS `calc` function. But this works! Check the browser, and you should see that `notecard-right` is 380 pixels wide.
+Since we're defining the width in terms of both a percentage _and_ a pixel value, we have to use the CSS `calc` function. But this works! Check the browser, and you should see that `notecard-right` is 380 pixels wide.
 
 Still, what happens if we later decide to change the width of `notecard-right`? Our width for `notecard-left` would now be outdated and incorrect.
 
@@ -148,6 +154,7 @@ No luck! But we've discovered one of the unique features of flex children. Unlik
 What else can we try?
 
 13. Add the following property to `notecard-left`:
+
 ```
     flex-grow: 1:
 ```
@@ -164,11 +171,12 @@ We are almost done with the sidebar layout, but there's a small hidden problem h
 </div>
 ```
 
-Now take a look at what's happened to `notecard-right` (right click -> Inspect). Scroll down the box representation, and notice that the width of `notecard-right` is *less* than 30 pixels! The `notecard-left` element has tried to expand as far as it can, and in doing so, it's squeezing the `notecard-right` element.
+Now take a look at what's happened to `notecard-right` (right click -> Inspect). Scroll down the box representation, and notice that the width of `notecard-right` is _less_ than 30 pixels! The `notecard-left` element has tried to expand as far as it can, and in doing so, it's squeezing the `notecard-right` element.
 
 Luckily, there is a simple fix here!
 
 14. Add the following property to `notecard-right`:
+
 ```
     flex-shrink: 0:
 ```
@@ -178,6 +186,7 @@ Finally, we've solved our sidebar problem. Adding `flex-shrink: 0` will prevent 
 To recap, when horizontally positioning elements, we two methods of setting the widths:
 
 **Method 1:**
+
 ```
 .notecard-left {
     width: calc(100% - 30px);
@@ -188,6 +197,7 @@ To recap, when horizontally positioning elements, we two methods of setting the 
 ```
 
 **Method 2:**
+
 ```
 .notecard-left {
     flex-grow: 1;
@@ -206,7 +216,6 @@ Method 1 is (arguably) easier to understand, but if we decide to change the side
 
 Let's now add some content to the left side of the notecard. Take another look at the mockup – there are four elements that we need to place: (1) the image, (2) the note title, (3) the note body, and (4) the footer/timestamp.
 
-
 One strategy for planning layouts is to create a system of "boxes within boxes". Then, for each box, commit to laying out the contents either horizontally or vertically.
 
 For example, the note title and note body (highlighted in green, below) can both be contained within a parent box (highlighed in blue), and arranged vertically. Then, the zebra image and the blue box can be placed inside another parent box (highlighted in red) and arranged horizontally. Finally, the red box and the footer text can be arranged vertically inside of `notecard-left`.
@@ -216,7 +225,6 @@ For example, the note title and note body (highlighted in green, below) can both
 Let's open `index.html` and try to create this layout. We'll specify all the elements first, and then add the styles and positioning.
 
 15. Start at the outside and work inward – first create the "red" box and the footer text:
-
 
 ```
 <div class="notecard-left">
@@ -242,7 +250,6 @@ Let's open `index.html` and try to create this layout. We'll specify all the ele
 
 17. And finally, we add the note title and note body text.
 
-
 ```
         <div class="notecard-text">
             <div class="note-title">
@@ -255,7 +262,6 @@ Let's open `index.html` and try to create this layout. We'll specify all the ele
             </div>
         </div>
 ```
-
 
 (Note that for the `<img>` tag in step 22, we added two properties – the class and the image source. Also note that a closing tag is not necessary.)
 
@@ -284,9 +290,10 @@ Let's style and position these elements. We'll start with the title and body tex
 
 In the Chrome Developer console, highlight the `notecard-text` element. Notice that it contains both the notecard title and notecard body text. We want to position this `notecard-text` element so that it sits to the right of the zebra image (`notecard-thumbnail`).
 
-How will we do this? Just as before, we will convert `notecard-thumbnail` and `notecard-text` into *flex children*. Recall the flex children will try to get as close together as possible, meaning that they will sit on the same line by default.
+How will we do this? Just as before, we will convert `notecard-thumbnail` and `notecard-text` into _flex children_. Recall the flex children will try to get as close together as possible, meaning that they will sit on the same line by default.
 
 20. Find the parent element of `notecard-thumbnail` and `notecard-text`. Add a `display: flex` rule, which will turn the child elements (`notecard-thumbnail` and `notecard-text`) into flex children.
+
 ```
 .notecard-main-content {
     display: flex;
@@ -313,6 +320,7 @@ Check the mockup – the horizontal and vertical layout is complete! All that's 
 The `object-fit: cover` property positions the image so that it covers the entire 70x70 px area. It will be scaled down, but keep the same aspect ratio. Any parts of the image that fall outside of the 70x70 area will be clipped. This is useful for cases where our image isn't an exact square, but needs to fit into a square.
 
 22. Add rounded corners to the image:
+
 ```
   border-radius: 5px;
 ```
@@ -326,6 +334,7 @@ Let's put some space between the image and the note text, so it looks more like 
 Almost there! All we have to do now it format the footer.
 
 25. Add a `notecard-footer` class, and adjust the font and margins:
+
 ```
 .notecard-footer {
     margin-top: 15px;
@@ -335,6 +344,7 @@ Almost there! All we have to do now it format the footer.
 ```
 
 26. In `index.html`, swap the placeholder text in the footer with an example timestamp.
+
 ```
 <div class="notecard-footer">
     Sep 1 2022, 12:30
