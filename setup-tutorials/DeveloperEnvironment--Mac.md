@@ -9,16 +9,19 @@ There are a ton of different tools out there to help developers write and test t
 - Google Chrome (for viewing and testing your pages)
 - Chrome Developer Tools (for interactive debugging)
 
-
 Below you'll find install instructions for the tools listed above.
 
+## Installing git
+
+To use git with visual studio code, you will need to make sure that git is installed on your computer. Open a terminal and type `git --version`. If you get a version number, you are good to go. If you get an error, follow the instructions to install the x-code command line tools.
 
 ## Visual Studio Code
 
-The installation for VS Code is super simple and similar to installing Chrome and GitHub Desktop. 
-1. Go to the [VS Code homepage](https://code.visualstudio.com/) 
+The installation for VS Code is super simple and similar to installing Chrome and GitHub Desktop.
+
+1. Go to the [VS Code homepage](https://code.visualstudio.com/)
 2. click **Download Mac Universal**
-3. click the ZIP file to open it 
+3. click the ZIP file to open it
 4. drag the VS Code application to your Applications folder.
 
 ![Screenshot of the VS Code landing page.](./assets/mac/vscode-homepage.png)
@@ -30,6 +33,7 @@ One of the nice things about VS Code is that it's very customizable, and you can
 Why do we need Live Server? Well, as you know, the pages we'll build in this class are going to be loaded up and run in the user's browser. And the browser needs to fetch the page contents from somewhere, which is usually a machine on the network called a _server_. When you submit your assignments, the server will be GitHub - but when you're building the app on your local computer, you'll need something that acts like a server but runs locally. And that's exactly what Live Server is.
 
 ### Installing Live Server
+
 Open VS Code and click the building blocks icon in the sidebar on the left of the VS Code window (fifth from the top). You'll see a list of extensions you can install, like this:
 
 ![Screenshot of the VS Code extensions pane in the sidebar.](./assets/mac/vscode-extensions.png)
@@ -37,7 +41,6 @@ Open VS Code and click the building blocks icon in the sidebar on the left of th
 To install the extension, simply search for "Live Server" in the Extensions sidebar, and hit Install:
 
 ![Screenshot of the Live Server extension page.](./assets/mac/vscode-live-server.png)
-
 
 ### Using Live Server
 
@@ -57,10 +60,9 @@ To stop the Live Server, simply click the Stop icon where the Go Live button ori
 
 With that, you should be able to edit code, run a Live Server, see your code run in Google Chrome, and inspect it with the Developer Tools. Happy coding!
 
-
 ## Google Chrome
 
-Please test your website using Google Chrome. We will too. If you don't have Chrome installed, here are the steps: 
+Please test your website using Google Chrome. We will too. If you don't have Chrome installed, here are the steps:
 
 1. Go to [chrome.google.com](https://www.google.com/chrome/downloads/) and click the **Download Chrome** button.
 
@@ -79,6 +81,7 @@ For example, try opening the [HCII course page](https://www.hcii.cmu.edu/academi
 ![Screenshot of the Chrome developer tools on the right of the HCII course page.](./assets/mac/chrome-devtools.png)
 
 The most important panels for you will be:
+
 - Elements: shows HTML
 - Styles: shows CSS
 - Console: you can output information from your JavaScript code, which is very helpful for debugging.
@@ -88,6 +91,5 @@ Note that you can arrange the panels as you like best, they may show up differen
 For example, the top panel shows "Elements", which is an interactive depiction of the HTML in the page. When you expand different parts of the HTML code and hover over them, you'll see the part of the page highlighted that the code corresponds to.
 
 > What if you want to find the source code for a particular element? A handy trick is to right-click (or Control+click) on any part of the webpage itself, then click **Inspect**. That will jump the Elements panel directly to the HTML that defined that particular element. Pretty cool, right?
-
 
 The Developer Tools have a ton of useful features. There's detailed documentation on all of its features [here](https://developer.chrome.com/docs/devtools/), which you might find useful along your web dev journey.

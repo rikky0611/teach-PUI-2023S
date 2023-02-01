@@ -1,5 +1,11 @@
 # GitHub Setup
 
+Also see our slide deck on using git [here.](https://docs.google.com/presentation/d/1z7gjAs_Yf4bo0Y0Oau6u-L_LO2vMRP2usWkFgYjE3lQ/edit#slide=id.p)
+
+## Installing git
+
+You might have to install git before you can use, see the instructions in the Deveoper Environment Setup.
+
 ## What is `git`?
 
 When you write code, you often need to keep track of what the code looked like in the past. Let's say on Monday you write a piece of code that works, and on Friday you come back and write a few more lines. But suddenly you find that the code you wrote on Monday no longer works. What happened?
@@ -17,7 +23,7 @@ So, are you ready to set up `git` and GitHub and achieve your version control dr
 ## Make a GitHub Account
 
 You'll need a GitHub account to upload your assignments and code, so let's make one now.
-Note that if you already have a GitHub account and use GitHub pages to host a personal website, you should make another account for the homework assignments. 
+Note that if you already have a GitHub account and use GitHub pages to host a personal website, you should make another account for the homework assignments.
 
 Go to [github.com](https://github.com) and click **Sign Up** in the top right corner.
 
@@ -37,17 +43,21 @@ After that's done, you should see this page:
 
 Alright, on to making GitHub work on your local computer!
 
+## Option 1: Use VS Code for git
 
-## Installing GitHub Desktop
+VS code supports the full git workfow to commit, push, pull and manage code without having to use another tool. See the slides above for the workflow.
+
+## Option 2: Installing GitHub Desktop
 
 Like we mentioned earlier, GitHub Desktop is a nice user interface that lets you use `git` without having to use a command line, and it helps you synchronize code between your local computer and online. You can do everything that you can do in GitHub Desktop through the command line (and many software engineers do), but this app just makes things easier. :)
 
 To start, go to the [GitHub Desktop home page](https://desktop.github.com).
 
-|             |                      |
-| ----------- | -------------------- |
-|  **On Mac:** If you have a newer Mac model with an *M1 or M2 chip*, click the link that says *"Download for an Apple silicon Mac."* Otherwise, just click the big purple download button. When it's done downloading, click the download to unzip the file, and view it in the Finder. You should now see the purple icon for GitHub Desktop in your Downloads folder. Drag the icon into the Applications folder for safekeeping, and it should be installed! | <img src="./assets/mac/github-desktop-home.png" alt="Screenshot of GitHub Desktop homepage." style="min-width: 600px"/> |
-| **On Windows:** Click the big purple button to download. After the download is completed, open the EXE and install it on your system by going through the installation wizzard.  | <img src="./assets/win/github-desktop-home.PNG" alt="Screenshot of GitHub Desktop homepage." style="min-width: 600px"/> | 
+**On Mac:** If you have a newer Mac model with an _M1 or M2 chip_, click the link that says _"Download for an Apple silicon Mac."_ Otherwise, just click the big purple download button. When it's done downloading, click the download to unzip the file, and view it in the Finder. You should now see the purple icon for GitHub Desktop in your Downloads folder. Drag the icon into the Applications folder for safekeeping, and it should be installed!
+<img src="./assets/mac/github-desktop-home.png" alt="Screenshot of GitHub Desktop homepage." style="min-width: 600px"/>
+
+**On Windows:** Click the big purple button to download. After the download is completed, open the EXE and install it on your system by going through the installation wizzard.
+<img src="./assets/win/github-desktop-home.PNG" alt="Screenshot of GitHub Desktop homepage." style="min-width: 600px"/>
 
 When you open the GitHub Desktop app for the first time, you should see this welcome page:
 
