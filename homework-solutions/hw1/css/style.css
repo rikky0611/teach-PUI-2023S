@@ -1,0 +1,55 @@
+body {
+	font-family: Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:  black;
+}
+
+p, select, button {
+	font-size:  20px;
+}
+
+.highlight {
+	background-color: yellow;
+	font-weight: bold;
+}
+
+.container {
+	padding-left:  10%;
+	padding-right:  10%;
+	padding-top:  80px;
+	display: grid;
+}
+
+.navbar a {
+	font-size:  25px;
+	width:  100%;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+div#banner {
+	padding-top:  50px;
+	font-size:  25px;
+	text-align: center;
+}
+
+.product-image {
+	border:  3px solid black;
+}
+
+.nav-wrapper img {
+	width:  400px;
+}
+
+.navbar {
+	border-top: 3px solid black;
+}
+
+.navbar a {
+	display: block;
+	text-align: center;
+	margin:  10px;
+}

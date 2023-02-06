@@ -1,0 +1,32 @@
+select {
+	padding:  10px;
+	width: 200px;
+}
+
+.product-wrapper {
+	text-align: center;
+}
+
+.product-wrapper img {
+	width: 400px;
+}
+
+#add-cart {
+	margin-top: 50px;
+}
+
+#add-cart span {
+	font-weight:  bold;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#add-cart span {
+	width: 150px;
+	padding: 10px;
+}
+
+#add-cart span.highlight {
+	border: 1px solid black;
+}

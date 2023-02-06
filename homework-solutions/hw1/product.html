@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Detail</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/product.css" type="text/css" />
+</head>
+<body>
+	<div class="nav-wrapper">
+		<a href="index.html" id="logo"><img src="images/logo/logo-01.svg"></a>
+		<div class="navbar">
+			<a id="product" href="index.html"><span class="highlight">Products</span></a>
+			<a id="cart" href="cart.html">Cart</a>
+		</div>
+		<div id="banner">Original cinnamon roll</div>
+	</div>
+
+	<div class="product-wrapper container">
+		<div id="img-container">
+			<img class="product-image" src="images/products/original-cinnamon-roll.jpg">
+		</div>
+		<div id="message">
+			<p>Customize our delicious, hand-making cinnamons to your liking!</p>
+		</div>
+		<div id="customize">
+			<p>Glazing:</p>
+			<select name="glazing">
+				<option value="keep-original">Keep original</option>
+				<option value="sugar-milk">Sugar milk</option>
+				<option value="vanilla-milk">Vanilla milk</option>
+				<option value="double-chocolate">Double chocolate</option>
+			</select>
+			<p>Pack size:</p>
+			<select name="pack-size">
+				<option value="1">1</option>
+				<option value="3">3</option>
+				<option value="6">6</option>
+				<option value="12">12</option>
+			</select>
+		</div>
+		<div id="add-cart">
+			<span>$2.49</span>
+			<a href="cart.html">
+				<span class="highlight">Add to Cart</span>
+			</a>
+		</div>
+	</div>
+
+</body>
+</html>

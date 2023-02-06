@@ -1,0 +1,21 @@
+.gallery-item:hover {
+	background-color: yellow;
+}
+
+.gallery-item {
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.gallery-item img {
+	width:  400px;
+}
+
+.gallery-item .name {
+	text-decoration: underline;
+}
+
+p.name:hover {
+	font-weight: bold;
+}

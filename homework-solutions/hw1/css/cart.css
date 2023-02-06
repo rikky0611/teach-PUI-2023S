@@ -1,0 +1,31 @@
+button {
+	cursor: pointer;
+}
+
+.cart-wrapper {
+	text-align: center;
+}
+
+#item-listing {
+	border-bottom:  5px solid black;
+	padding-bottom:  20px;
+}
+
+#item-listing img {
+	width: 200px;
+}
+
+p.remove {
+	text-decoration: underline;
+	font-weight:  bold;
+	cursor: pointer;
+}
+
+#checkout {
+	padding-top: 20px;
+}
+
+#checkout button {
+	width:  150px;
+	padding: 20px;
+}
