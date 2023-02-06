@@ -15,7 +15,7 @@ let myCar = {
   };
 
 //Example 1
-//console.log(myCar.isMoving());
+// console.log(myCar.isMoving());
 
 //Example 2
 //myCar.drive(50);
