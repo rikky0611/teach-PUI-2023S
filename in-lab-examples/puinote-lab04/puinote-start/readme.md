@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Zip file here: https://tinyurl.com/pui-lab5
+Zip file here: https://bit.ly/PUI_Lab04
 
 This week, we will give users the ability to *delete* notes from our note-taking application (by clicking on the trash can icon). See an example here: https://interactive-structures.org/teach-pui/in-lab-examples/puinote-lab04/puinote-end/
 
