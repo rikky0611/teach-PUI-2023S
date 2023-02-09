@@ -1,6 +1,8 @@
 # GitHub Setup
 
-Also see our slide deck on using git [here.](https://docs.google.com/presentation/d/1z7gjAs_Yf4bo0Y0Oau6u-L_LO2vMRP2usWkFgYjE3lQ/edit#slide=id.p)
+See our slide deck on using git [here.](https://docs.google.com/presentation/d/1z7gjAs_Yf4bo0Y0Oau6u-L_LO2vMRP2usWkFgYjE3lQ/edit#slide=id.p)
+
+It has more in depth examples of the full workflow, this guide will help you install the basics.
 
 ## Installing git
 
@@ -43,9 +45,9 @@ After that's done, you should see this page:
 
 Alright, on to making GitHub work on your local computer!
 
-## Option 1: Use VS Code for git
+## Option 1: Use VS Code for git (preferred)
 
-VS code supports the full git workfow to commit, push, pull and manage code without having to use another tool. See the slides above for the workflow.
+VS code supports the full git workfow to commit, push, pull and manage code without having to use another tool. See our tutotial slides (linked at top of page) for the workflow.
 
 ## Option 2: Installing GitHub Desktop
 
