@@ -241,6 +241,8 @@ createElement(testNote);
 
 A third note should appear! We can now dynamically add notecards.
 
+What change would you observe when you change `prepend` to `append` in `CreateElement`?
+
 
 ## Deleting Notecards
 
