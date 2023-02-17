@@ -99,7 +99,7 @@ function submitNote() {
 
 13. In the developer console, examine `notecardSet` before and after adding notecards. Notice that new notecards are added to set.
 
-Feel free to revisit [Exercise 5](https://github.com/interactive-structures/teach-pui/tree/main/in-lab-examples/puinote-lab05/puinote-start) for more details about the `addNewNote` and `createElement` functions.
+Feel free to revisit [Exercise 5](https://github.com/rikky0611/teach-PUI-2023S/tree/main/in-lab-examples/puinote-lab05/puinote-start) for more details about the `addNewNote` and `createElement` functions.
 
 ---
 
