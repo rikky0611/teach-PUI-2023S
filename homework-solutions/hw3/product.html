@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Detail</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/product.css" type="text/css" />
+</head>
+<body>
+	<div class="nav-wrapper">
+		<a href="index.html"><img alt="bun bun bake shop logo" src="images/logo/logo-01.svg"></a>
+		<div class="navbar">
+			<div class="nav-row">
+				<a href="#"><span class="highlight">Products</span></a>
+				<a href="cart.html">Cart</a>
+			</div>
+			<div id="banner">Our hand-made cinnamon rolls</div>
+		</div>
+	</div>
+
+	<div class="product-wrapper container">
+		<div id="img-container">
+			<img class="product-image" src="images/products/original-cinnamon-roll.jpg">
+		</div>
+		<div id="customize">
+			<div id="message">
+				<p>Customize our delicious, hand-making cinnamons to your liking!</p>
+			</div>
+			<div>
+				<p>Glazing:</p>
+				<select id="glazing-options" onchange="glazingChange(this)">
+					<option value=1>aaa</option>
+				</select>
+				
+				<p>Pack size:</p>
+				<select id="pack-options" onchange="packChange(this)"></select>
+			</div>
+			<div id="add-cart">
+				<span>$2.49</span>
+				<a href="cart.html">
+					<span class="highlight">Add to Cart</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/price.js"></script>
+</body>
+</html>

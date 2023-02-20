@@ -1,0 +1,71 @@
+body {
+	font-family: Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:  black;
+}
+
+p, select, button {
+	font-size:  20px;
+}
+
+.highlight {
+	background-color: yellow;
+	font-weight: bold;
+}
+
+.container {
+	padding-left:  10%;
+	padding-right:  10%;
+	padding-top:  80px;
+	display: flex;
+}
+
+.navbar a {
+	font-size:  25px;
+	width:  100%;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+div#banner {
+	padding-top:  30px;
+	font-size:  25px;
+}
+
+.product-image {
+	border:  3px solid black;
+}
+
+.nav-wrapper {
+	display:  flex;
+	text-align: right;
+}
+
+.nav-wrapper img {
+	flex:  0 0 auto;
+	width: 350px;
+	margin-right: 20px;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	width:  100%;
+}
+
+.navbar a {
+	margin: 30px;
+}
+
+.nav-row {
+	padding: 30px;
+	border-bottom:  5px solid black;
+}
+
+div#banner {
+	text-align: left;
+	margin-top: 30px;
+}
