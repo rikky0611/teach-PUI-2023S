@@ -1,0 +1,39 @@
+select {
+	padding:  10px;
+}
+
+.product-wrapper img {
+	width: 600px;
+	margin-right: 20px;
+}
+
+#customize {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 30%;
+}
+
+.product-wrapper select {
+	width:  100%;
+}
+
+#add-cart {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#add-cart span {
+	font-weight:  bold;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#add-cart span.highlight {
+	border: 1px solid black;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 150px;
+	display: inline-block;
+}
